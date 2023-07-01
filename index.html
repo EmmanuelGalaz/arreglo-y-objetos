@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio - todo List</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body>
+    <section class="todoList">
+        <h1>Todo List</h1>
+        <article>
+            <div class="tituloh4">
+            <h4>Nueva tarea</h4>
+            </div>
+            <div class="campos">
+            <input type="text" id="agregarTarea">
+            <button type="button" id="boton">Agregar</button>
+            </div>
+            <div class="resultados">
+                <div class="totales">
+                    <p><strong>Total</strong>: <span id="total"></span></p>
+                    <p><strong>Realizadas</strong>: <span id="realizadas"></span> </p>
+                </div>
+
+            <!-- table -->
+                <table id="listaDeTareas" class="tabla">
+                    <thead>
+                        <tr>
+                            <td class="titulos">ID </td>
+                            <td class="titulos">Tarea </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td>1</td>
+                            <td>Tarea 1</td>
+                            <td><input type="checkbox"></td>
+                            <td><span></span></td>
+                        </tr> -->
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </section>
+
+    <script src="asset/js/javaScript.js"></script>
+</body>
+</html>

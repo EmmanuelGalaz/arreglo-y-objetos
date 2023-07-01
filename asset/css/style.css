@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background-color: rgb(128, 186, 167);
+}
+
+.todoList {
+    width: 30%;
+    background-color: #d9d5d5;
+    margin: 50px auto;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+    
+}
+
+.todoList h1 {
+    border-bottom: 1px solid rgb(67, 67, 67);
+    width: 95%;
+    margin-left: 10px;
+}
+
+article {
+    width: 100%;
+    margin-top: 20px; 
+}
+
+article .tituloh4 {
+    font-weight: 300;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.campos {
+    display: flex;
+    flex-wrap: wrap;
+}
+.campos input {
+    padding: 5px 0;
+    margin-left: 10px;
+    width: 72%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+article button {
+    padding: 10px 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #25e125;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+article .resultados {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+article .resultados .totales {
+    width: 27%;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+article .resultados .totales p{
+    padding-bottom: 10px;
+}
+
+/* tabla */
+tbody tr.bold {
+    font-weight: bold;
+}
+
+.tabla {
+    width: 68%;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(102, 102, 102);
+    
+}
+
+.tabla thead tr .titulos{
+    font-size: 1em;
+    font-weight: 700;
+    color:#fff;
+}
+   
+td {
+    width: 100%;
+    font-size: 0.8em;
+    padding-left: 10px;
+    font-weight: 500;
+    color: #fff;
+}
+
+td button {
+    width: 25px;
+    background-color: #25e125;
+    text-align: center;
+    margin-right: 5px;
+}
+
+/* media queries */
+@media (max-width: 576px){
+    article .resultados .totales {
+        width: 90%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+    article .resultados .totales p{
+        padding: 0 5px;
+    }
+
+    article .resultados {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .campos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabla {
+        margin: auto;
+    }
+
+    .campos input {
+        padding: 5px 0;
+        margin-left: 10px;
+        width: 72%;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    article button {
+        margin: 5px 0;
+        padding: 10px 5px;
+        margin-left: 5px;
+        cursor: pointer;
+        background-color: #2c7c2c;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+    }
+      
+}
+
+@media (min-width: 576px){
+    article .resultados .totales {
+        width: 90%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+    article .resultados .totales p{
+        padding: 0 5px;
+    }
+
+    article .resultados {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .tabla {
+        margin: auto;
+    }
+
+    .campos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .campos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .campos input {
+        padding: 5px 0;
+        margin-left: 10px;
+        width: 72%;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    article button {
+        margin: 5px 0;
+        padding: 10px 5px;
+        margin-left: 5px;
+        cursor: pointer;
+        background-color: #2c7c2c;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+    }    
+}
+
+@media (min-width: 768px){
+    article .resultados .totales {
+        width: 90%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+    article .resultados {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .tabla {
+        margin: auto;
+    }
+
+    .campos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .campos input {
+        padding: 5px 0;
+        margin-left: 10px;
+        width: 72%;
+        outline: none;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    article button {
+        margin: 5px 0;
+        padding: 10px 5px;
+        margin-left: 5px;
+        cursor: pointer;
+        background-color: #2c7c2c;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+    }    
+}
+
+@media (min-width: 992px){
+    article .resultados .totales {
+        width: 25%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    article .resultados .totales p {
+        font-size: 0.6em;
+    }
+
+    article .resultados {
+        display: flex;
+        flex-direction: row; 
+    }
+
+    .campos {
+    display: flex;
+    flex-direction: row;
+}
+}
+
+@media (min-width: 1200px){
+    article .resultados .totales p{
+        font-size: 0.9em;
+    }
+}
+
+
